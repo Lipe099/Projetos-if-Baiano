@@ -1,0 +1,21 @@
+#include <stdio.h>
+// como armazenar as notas 1 e 2 de 5 alunos
+
+   int main(){
+
+    const int tam = 10;
+    float n[tam];
+    float soma=0;
+    int i;
+
+ for (i=0;i<tam;i++){
+      printf("Digite a nota 1 do aluno :");
+       scanf("%f", & n[i]);
+         soma += n[i];
+         }
+
+ for (i=0;i<tam;i++){
+     printf(" \nnota : %g",n[i]);
+ }
+
+ printf(" \nmedia : %g",soma/10);
